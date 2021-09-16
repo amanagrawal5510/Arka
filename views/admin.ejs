@@ -1,0 +1,28 @@
+<%- include("partials/header")-%>
+<%- include("partials/navbar")-%>
+
+
+<section class="article-list">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Latest Articles</h2>
+        </div>
+
+        <div class="col-sm-6 col-md-4 item">
+            <form action="/articlecreate" method="GET">
+                <button class="btn btn-primary" style="border-radius: 100%;" type="submit" >Add Articles</button>
+            </form>
+        </div>
+
+        <div class="col-md-6 col-lg-4 item">
+            <form action="/memberscreate" method="GET">
+                <button class="btn btn-primary" style="border-radius: 100%;" type="submit" >Add Member</button>
+            </form>
+        </div>
+        
+
+    </div>
+
+</section>
+
+<%- include("partials/footer")-%> 

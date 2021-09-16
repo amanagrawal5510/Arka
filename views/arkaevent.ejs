@@ -1,0 +1,46 @@
+<%- include("partials/header")-%>
+<%- include("partials/navbar")-%>
+
+    <section class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Latest Articles</h2>
+            </div>
+
+
+            
+            <div class="row articles">
+                <% eventlist.forEach(function(item){%>
+                <div class="col-sm-6 col-md-4 item">
+                    
+                    <div class="simple-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper imageslider">
+                                <% imageslist.forEach(function(image){%> 
+                                    <% if(image.title == item.title ) { %>
+                                <div class="swiper-slide">
+                                    <img src="data:<%= image.contentType %>;base64,<%= image.imageBase64 %>" width="100%" height="100%">
+                                </div>
+                                    <% } %>
+                                <% })%>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <h3 class="name"><%= item.title %><br><br></h3>
+                    <p class="description"><%= item.descrition.substring(0, 200) + "..." %>&nbsp;
+                    <a href="/<%= item.title %>" >Read More</a>
+                    <br></p>
+                    
+                    
+                </div>
+                <% })%>
+                
+
+            </div>
+           
+        </div>
+    </section>
+<%- include("partials/footer")-%> 
