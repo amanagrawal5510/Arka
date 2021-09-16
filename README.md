@@ -1,11 +1,7 @@
 # Arka_Website
 This website is a shorthand tool for the students to access all the details and updates of the clubs and student chapters in which they are interested.
 
-![Microsoft Game DVR - Arka - Google Chrome - VLC media player 26-07-2021 00_45_27](https://user-images.githubusercontent.com/54680696/126910922-63a76b19-691e-477e-83a1-c687504cde31.png)
-
-![Microsoft Game DVR - Arka - Google Chrome - VLC media player 26-07-2021 00_45_43](https://user-images.githubusercontent.com/54680696/126910943-89885ecf-e882-4ac6-9e95-947236aa14cd.png)
-
-![Microsoft Game DVR - Arka - Google Chrome - VLC media player 26-07-2021 00_45_39](https://user-images.githubusercontent.com/54680696/126910941-8dab24bb-7f2f-4556-b10e-559f0035418f.png)
+[Deployed Here!](https://shrouded-harbor-77455.herokuapp.com/)
 ***
 [Video Link](https://www.youtube.com/watch?v=xNMwgIhXO44)
 ***
