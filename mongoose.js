@@ -1,13 +1,15 @@
 //Database
 const { MongooseDocument } = require('mongoose');
 const mongoose = require('mongoose');
+require("dotenv").config();
 
-
-mongoose.connect("mongodb+srv://@cluster0.n1jec.mongodb.net/arkaDB" , {useNewUrlParser: true, useUnifiedTopology: true});
-//Database
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
-
+mongoose
+  .connect(process.env.DATABASE, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .then(() => console.log("Database connected successfully"));
 
 const articleSchema = new mongoose.Schema({
 
